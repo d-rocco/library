@@ -56,7 +56,9 @@ input {
 
 .add-book-btn,
 .submit-book-btn,
-.has-read-btn {
+.has-read-btn,
+.finished-btn,
+.remove-btn {
   font-family: inherit;
   font-size: 1.1rem;
   font-weight: 500;
@@ -156,12 +158,59 @@ label {
 }
 
 .book-card {
-  height: 300px;
+  height: 260px;
   background-color: #d0b4bf;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
 }
 
 .book-title,
 .book-author,
 .number-of-pages {
   color: #130c0f;
+}
+
+.book-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.book-author {
+  font-size: 1.5rem;
+}
+
+.number-of-pages {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  font-size: 1.25rem;
+}
+
+.finished-btn {
+  background-color: #130c0f;
+  color: #d0b4bf;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.remove-btn {
+  background-color: #130c0f;
+  color: #d0b4bf;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.finished-btn:hover,
+.remove-btn:hover {
+  font-size: 1.1rem;
+}
+
+.finished-btn:active,
+.remove-btn:active {
+  font-size: 1rem;
 }
