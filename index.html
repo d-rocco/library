@@ -6,14 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="header">
         <h1 class="title">A Basic Library</h1>
-        <button type="submit" class="add-book-btn">Add Book</button>
+        <button type="button" class="add-book-btn">Add Book</button>
+        <form action="#" class="book-info">
+          <div class="title-div">
+            <label for="title-input">Title</label>
+            <input type="text" class="title-input" />
+          </div>
+          <div class="author-div">
+            <label for="author">Author</label>
+            <input type="text" class="author" />
+          </div>
+          <div class="pages-div">
+            <label for="pages-input">Number of Pages</label>
+            <input type="number" class="pages-input"/>
+          </div>
+          <div class="has-read-div">
+            <label for="has-read-btn">Completed?</label>
+            <button type="button" class="has-read-btn">No</button>
+          </div>
+          <button class="submit-book-btn">Submit Book</button>
+        </form>
       </div>
-      <div class="library"></div>
+      <div class="library">
+        <!-- <div class="book-card">
+          <div class="title"></div>
+          <div class="author"></div>
+          <div class="number-of-pages"></div>
+          <div class="has-been-read"></div>
+          <div class="remove-book"></div> 
+        </div> -->
+      </div>
     </div>
   </body>
 </html>
